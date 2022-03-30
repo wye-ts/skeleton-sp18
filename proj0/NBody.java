@@ -53,13 +53,13 @@ public class NBody {
                 p.draw();
 
             StdDraw.show();
-            StdDraw.pause(100);
+            StdDraw.pause(10);
         }
-        StdOut.printf("%d\n", planets.length);
+        StdOut.printf("%d\n", allPlanets.length);
         StdOut.printf("%.2e\n", radius);
-        for (int i = 0; i < planets.length; i++) {
-            StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n", allPlanets[i].xxPos, planets[i].yyPos,
-                    planets[i].xxVel, allPlanets[i].yyVel, planets[i].mass, planets[i].imgFileName);
+        for (int i = 0; i < allPlanets.length; i++) {
+            StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n", allPlanets[i].xxPos, allPlanets[i].yyPos,
+                    allPlanets[i].xxVel, allPlanets[i].yyVel, allPlanets[i].mass, allPlanets[i].imgFileName);
         }
 
         System.exit(0);
